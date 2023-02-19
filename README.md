@@ -39,13 +39,11 @@ QR code generator
 
 ## Dependencies
 
-[
 get: 4.6.5,
 qr_flutter: ^4.0.0,
 reactive_forms: ^14.2.0,
 screenshot: ^1.3.0
-]
 
 ## Contact
 
-[rajdipm65@gmail.com]
+rajdipm65@gmail.com
