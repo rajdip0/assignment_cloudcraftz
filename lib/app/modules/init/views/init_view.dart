@@ -58,7 +58,7 @@ class InitView extends GetView<InitController> {
                         borderRadius: BorderRadius.circular(15.0),
                         side: const BorderSide(color: Colors.red))),
               ),
-              onPressed: () => Get.offNamed("form"),
+              onPressed: () => Get.toNamed("form"),
               child: const Text(
                 "Get started",
                 style:

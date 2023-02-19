@@ -78,12 +78,15 @@ class _HomeViewState extends State<HomeView> {
                     color: Colors.white,
                     borderRadius: BorderRadius.all(Radius.circular(30))),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    const Text(
-                      'Your qr code is generated',
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                    const Padding(
+                      padding: EdgeInsets.all(20.0),
+                      child: Text(
+                        'Your QR code is generated',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 25),
+                      ),
                     ),
                     Screenshot(
                       controller: _screenshotController,
@@ -114,7 +117,7 @@ class _HomeViewState extends State<HomeView> {
                                   borderRadius: BorderRadius.circular(15.0),
                                   side: const BorderSide(color: Colors.white))),
                         ),
-                        onPressed: () => Get.offAll('/'),
+                        onPressed: () => Get.offAllNamed('/init'),
                         child: const Text(
                           'Restart',
                           style: TextStyle(
